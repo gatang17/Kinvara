@@ -8,66 +8,169 @@
    <title>Kinavara</title>
 
    <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
    </style>
 </head>
-    
+
 <body>
 
-<!-- NAV -->
 <header>
     <div class="nav-wrapper">
 
         <div class="logo-img">
             <a href="index.html">
-                <img src="images/kinvaralogo.png" alt="Kinvara Logo">
+                <img src="images/kinvaralogoblk.png" alt="Kinvara Logo">
             </a>
         </div>
 
+        <!-- DESKTOP NAV -->
         <nav class="nav-pill">
-               <a href="index.html">home</a>
             <a href="about.html">about</a>
-            <a href="events.html">events</a>
-            <a href="sign_up.html">pre-Order</a>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#events.html">events</a>
+            <a href="sign_up.html">pre-order</a>
         </nav>
 
+        <!-- HAMBURGER (MOVED OUTSIDE nav-pill) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </div>
+
+    <!-- MOBILE NAV -->
+    <nav class="mobile-nav">
+        <div class="mobile-back">← Back</div>
+        <a href="about.html">about</a>
+        <a href="#events.html">events</a>
+        <a href="sign_up.html">pre-order</a>
+    </nav>
 </header>
+
+
   
-     
-    <section class="about-hero-full reveal">
-    <img src="images/fullcase.jpg" alt="About Image">
-    <div class="about-hero-overlay">
-        <h1>Pre-order</h1>
-        <p>Order now. Get them first.</p>
+     <section class="preorder-hero">
+
+  <!-- LEFT: CAROUSEL -->
+      <div class="preorder-carousel">
+        <div class="carousel-track">
+        <img src="images/fullheadphones.jpg" alt="">
+          <img src="images/closeupear.jpg" alt="">
+          <img src="images/headphonesandacsries.jpg" alt="">
+            <img src="images/whiteonwhite.jpg" alt="">
+        <img src="images/fullheadphones.jpg" alt="">
+          <img src="images/headphonesincase.jpg" alt="">
+             <img src="images/headphonesbothhands.jpg" alt="">
+        </div>
+
+    <div class="carousel-controls">
+    
+
+      <button class="prev">‹</button>
+      <button class="next">›</button>
     </div>
+          
+  </div>
+
+         
+  <!-- RIGHT: PRODUCT INFO -->
+  <div class="preorder-info">
+    <h1>Kinvara Super</h1>
+    <h2>$349</h2>
+    <p class="release">Releases July 2026</p>
+
+    <div class="color-picker">
+      <p>Choose Color:</p>
+      <div class="colors">
+        <span class="color black active"></span>
+        <span class="color beige"></span>
+        <span class="color silver"></span>
+      </div>
+    </div>
+
+    <a href="order.html" class="preorder-btn">Pre‑Order Now</a>
+  </div>
+
 </section>
     
-    <div class="signup-form-box">
-        <div class="signup-form">
-            <h2>Sign Up</h2>
-            <h3 class="subheading">To get a notification as the release date approaches </h3>
-            
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                
-                <label for="number">Number:</label>
-                <input type="text" id="number" name="number">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                
-                <a href="tk_page.html"class="Notified-button">Get Notified!</a>
-                
-        </div>
+<div class="carousel-thumbs">
+  <img src="images/fullheadphones.jpg" data-index="0" class="active">
+  <img src="images/closeupear.jpg" data-index="1">
+  <img src="images/headphonesandacsries.jpg" data-index="2">
+  <img src="images/whiteonwhite.jpg" data-index="3">
+  <img src="images/fullheadphones.jpg" data-index="4">
+<img src="images/headphonesincase.jpg" data-index="5">
+  <img src="images/headphonesbothhands.jpg" data-index="6">
+</div>
+
+<!-- DESCRIPTION -->
+<section class="preorder-description">
+  <h2>Experience Sound Like Never Before</h2>
+  <p>
+    Kinvara Super brings warmth, clarity, and emotion to every note. Designed for comfort,
+    engineered for precision, and crafted with intention — this is the next generation of
+    immersive listening.
+  </p>
+</section>
+
+
+<!-- FEATURES -->
+<section class="preorder-features">
+  <h2>Features</h2>
+
+  <div class="features-grid">
+    <div class="feature">
+      <h3>Active Noise Cancellation</h3>
+      <p>Block out distractions and dive into your world.</p>
     </div>
-      <footer class="footer reveal">
+
+    <div class="feature">
+      <h3>SoftTouch Comfort</h3>
+      <p>Feather‑light design for all‑day listening.</p>
+    </div>
+
+    <div class="feature">
+      <h3>40‑Hour Battery</h3>
+      <p>Stay powered through long sessions and travel days.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Warm, Balanced Sound</h3>
+      <p>Engineered to bring out the emotion in every track.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SPECS -->
+<section class="preorder-specs">
+  <h2>Specifications</h2>
+
+  <div class="specs-grid">
+    <div class="spec">
+      <h4>Driver Size</h4>
+      <p>40mm</p>
+    </div>
+
+    <div class="spec">
+      <h4>Battery Life</h4>
+      <p>40 hours</p>
+    </div>
+
+    <div class="spec">
+      <h4>Charging</h4>
+      <p>USB‑C Fast Charge</p>
+    </div>
+
+    <div class="spec">
+      <h4>Weight</h4>
+      <p>240g</p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer reveal">
     <div class="footer-container">
 
         <div class="footer-logo">
@@ -80,10 +183,45 @@
             <a href="sign_up.html">Shop</a>
         </div>
 
-        <p class="footer-copy">© 2024 Kinvara. All rights reserved.</p>
+        <p class="footer-copy">© 2026 Kinvara. All rights reserved.</p>
 
     </div>
 </footer>
+   <script>
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+       const thumbs = document.querySelectorAll(".carousel-thumbs img");
+
+thumbs.forEach(thumb => {
+  thumb.addEventListener("click", () => {
+    index = parseInt(thumb.dataset.index);
+    updateCarousel();
+
+    thumbs.forEach(t => t.classList.remove("active"));
+    thumb.classList.add("active");
+  });
+});
+
+</script>
+
 </body>
 </html>
 
